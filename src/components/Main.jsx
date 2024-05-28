@@ -14,13 +14,13 @@ function Main(){
         <div className="Main-contaner">
             <ul className='Nav-list'>
                 <li>
-                    <input type="button" value='Content1' onClick={() => handleButtonClick("content1")} />
+                    <input type="button" class="navBtn" value='Content1' onClick={() => handleButtonClick("content1")} />
                 </li>
                 <li>
-                    <input type="button" value='Content2' onClick={() => handleButtonClick("content2")} />
+                    <input type="button" class="navBtn" value='Content2' onClick={() => handleButtonClick("content2")} />
                 </li>
                 <li>
-                    <input type="button" value='Content3' onClick={() => handleButtonClick("content3")} />
+                    <input type="button" class="navBtn" value='Content3' onClick={() => handleButtonClick("content3")} />
                 </li>
             </ul>
             {contentView === "content1" ? <MainContent1 /> : contentView === "content2" ? <MainContent2 /> : <MainContent3 />}
